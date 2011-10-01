@@ -12,6 +12,9 @@
                 #{render("/com/stejskal/web/scala/fantasydrafter/divs/TeamList.scaml")}
                 #{render("/com/stejskal/web/scala/fantasydrafter/divs/MainNavigation.scaml")}
                 %div{:id=>"PopoutContainer"}
+                    %a{:class=>"PullTab", :id=>"MyTeamTab", :type=>"button", :onClick=>"$('#MyTeam').toggleClass('expanded');$('#PickList').removeClass('expanded');$('#DraftHistory').removeClass('expanded');"}
+                    %a{:class=>"PullTab", :id=>"PickListTab", :type=>"button", :onClick=>"$('#PickList').toggleClass('expanded');$('#MyTeam').removeClass('expanded');$('#DraftHistory').removeClass('expanded');"}
+                    %a{:class=>"PullTab", :id=>"DraftHistoryTab", :type=>"button", :onClick=>"$('#DraftHistory').toggleClass('expanded');$('#PickList').removeClass('expanded');$('#MyTeam').removeClass('expanded');"}
                     #{render("/com/stejskal/web/scala/fantasydrafter/divs/MyTeam.scaml")}
                     #{render("/com/stejskal/web/scala/fantasydrafter/divs/PickList.scaml")}
                     #{render("/com/stejskal/web/scala/fantasydrafter/divs/DraftHistory.scaml")}

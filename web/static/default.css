@@ -15,76 +15,84 @@ body {
     padding-right: 5px;
 }
 
-#MainNavigation ul{
-	list-style-type: none;
-	width: 125px;
+#MainNavigation ul {
+    list-style-type: none;
+    width: 125px;
     padding: 0;
 }
 
-#MainNavigation ul li a{
-	display: block;
-	color: #7C4F00;
-	padding: 6px;
-	font-size: 14px;
-	text-decoration: none;
-	border-bottom: 1px solid #B95400;
+#MainNavigation ul li a {
+    display: block;
+    color: #7C4F00;
+    padding: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 1px solid #B95400;
 }
 
-#MainNavigation ul li a:link, .sidebarmenu ul li a:visited{
-	background-color: #000;
+#MainNavigation ul li a:link, .sidebarmenu ul li a:visited {
+    background-color: #000;
 }
 
-#MainNavigation ul li a:visited{
-	color: #7C4F00;
+#MainNavigation ul li a:visited {
+    color: #7C4F00;
 }
 
-#MainNavigation ul li a:hover{
-	color: #AB9F82;
+#MainNavigation ul li a:hover {
+    color: #AB9F82;
     background: #391400;
 }
 
 #MainNavigation ul li a:active {
-	background: #AB9F82;
-	color: #391400;
+    background: #AB9F82;
+    color: #391400;
 }
 
 #PopoutContainer {
+    border-bottom: 1px solid #AB9F82;
+    border-top: 1px solid #AB9F82;
+    border-left: 1px solid #AB9F82;
     float: right;
 }
 
-#PopoutContainer ul{
+#PopoutContainer ul {
     list-style-type: none;
     padding: 0;
 }
-.PullTabContainer{
+
+#MiddleContainer{
+    position:relative;
+}
+.PullTabContainer {
     position: relative;
     margin-top: 3px;
-    border-bottom:1px solid #AB9F82;
-    border-top:1px solid #AB9F82;
-    border-left:1px solid #AB9F82;
     left: 120px;
 }
 
-.PullTabContainer.expanded{
+.PullTabContainer.expanded {
     left: 0;
 }
 
-.PullTab{
+.PullTab {
     position: absolute;
     left: -20px;
-    height: 100%;
+    height: 100PX;
     width: 20px;
+    z-index: -3;
 }
 
-#MyTeamTab{
+#MyTeamTab {
     background: transparent url(images/myteam.png) no-repeat center top;
 }
-#DraftHistoryTab{
+
+#DraftHistoryTab {
     background: transparent url(images/drafthistory.png) no-repeat center top;
 }
-#PickListTab{
+
+#PickListTab {
     background: transparent url(images/draftlist.png) no-repeat center top;
 }
+
 #Header {
     border-bottom: 2px solid #7C4F00;
 }
