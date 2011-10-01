@@ -1,0 +1,20 @@
+-@ var body: String
+%html
+    %head
+        %title Drafter
+        %link{:href=>"/Draft/static/default.css", :rel=>"stylesheet", :type=>"text/css"}
+        %script{:src=>"/Draft/static/javascript/JQuery.js"}
+    %body
+        %div{:id=>"MainContainer"}
+            %div{:id=>"TopContainer"}
+                #{render("/com/stejskal/web/scala/fantasydrafter/divs/Header.scaml")}
+            %div{:id=>"MiddleContainer"}
+                #{render("/com/stejskal/web/scala/fantasydrafter/divs/TeamList.scaml")}
+                #{render("/com/stejskal/web/scala/fantasydrafter/divs/MainNavigation.scaml")}
+                %div{:id=>"PopoutContainer"}
+                    #{render("/com/stejskal/web/scala/fantasydrafter/divs/MyTeam.scaml")}
+                    #{render("/com/stejskal/web/scala/fantasydrafter/divs/PickList.scaml")}
+                    #{render("/com/stejskal/web/scala/fantasydrafter/divs/DraftHistory.scaml")}
+                #{unescape(body)}
+            %div{:id=>"BottomContainer"}
+                #{render("/com/stejskal/web/scala/fantasydrafter/divs/Footer.scaml")}
