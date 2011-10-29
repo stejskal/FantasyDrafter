@@ -1,9 +1,5 @@
-%div{:id=>"DraftHistory", :class=>"PullTabContainer"}
+-@ var draftHistory : List[com.stejskal.web.scala.fantasydrafter.models.Player]
+%div{:id=>"DraftHistory", :class=>"PullTabContainer hidden"}
     %H3 Draft History
     %ul
-        %li
-            Arian Foster
-        %li
-            Peyton Manning
-        %li
-            Cadallac Williams
+        =draftHistory foreach {view(_, "list")}

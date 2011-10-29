@@ -1,0 +1,35 @@
+#MainNavigation {
+    float: left;
+    padding-right: 5px;
+}
+
+#MainNavigation ul {
+    list-style-type: none;
+    width: 125px;
+    padding: 0;
+    margin: 0;
+}
+
+#MainNavigation ul li a {
+    padding: 6px;
+    font-size: 14px;
+    border-bottom: 1px solid #B95400;
+}
+
+#MainNavigation ul li a:link, .sidebarmenu ul li a:visited {
+    background-color: #000;
+}
+
+#MainNavigation ul li a:visited {
+    color: #7C4F00;
+}
+
+#MainNavigation ul li a:hover {
+    color: #AB9F82;
+    background: #391400;
+}
+
+#MainNavigation ul li a:active {
+    background: #AB9F82;
+    color: #391400;
+}

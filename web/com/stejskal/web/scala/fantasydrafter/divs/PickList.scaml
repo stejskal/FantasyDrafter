@@ -1,9 +1,5 @@
-%div{:id=>"PickList", :class=>"PullTabContainer"}
+-@ var pickList : List[com.stejskal.web.scala.fantasydrafter.models.Player]
+%div{:id=>"PickList", :class=>"PullTabContainer hidden"}
     %H3 Pick List
     %ul
-        %li
-            Arian Foster
-        %li
-            Peyton Manning
-        %li
-            Cadallac Williams
+        =pickList foreach {view(_, "list")}

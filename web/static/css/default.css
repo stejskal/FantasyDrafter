@@ -1,0 +1,42 @@
+body {
+    background: #000;
+    color: #AB9F82;
+}
+
+a {
+    display: block;
+    color: #7C4F00;
+    text-decoration: none;
+}
+
+#MainContainer {
+    margin: 10px auto;
+    width: 700px;
+    border: 2px solid #AB9F82;
+    overflow: auto;
+}
+
+#MiddleContainer {
+    clear: both;
+    position: relative;
+    width: inherit;
+}
+
+#TitleImage {
+    position: relative;
+    left: 155px;
+}
+
+#Footer {
+    margin: 0 auto;
+    clear: both;
+}
+
+#TeamList {
+    border-top: 2px solid #7C4F00;
+    border-bottom: 2px solid #7C4F00;
+}
+
+#buffer {
+    clear: both;
+}

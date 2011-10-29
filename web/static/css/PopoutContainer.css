@@ -1,0 +1,66 @@
+#PopoutContainer {
+    position: relative;
+    border-bottom: 1px solid #AB9F82;
+    border-top: 1px solid #AB9F82;
+    border-left: 1px solid #AB9F82;
+    margin-left: 20px;
+    min-height: 330px;
+    float: right;
+    background: #391400;
+}
+
+#TeamList ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#TeamList ul li {
+    position: relative;
+    float: left;
+    border-right: 2px solid #B95400;
+    padding: 0 5px;
+}
+
+#PopoutContainer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.PullTabContainer {
+    position: relative;
+    margin-top: 3px;
+    width: 200px;
+}
+
+.PullTabContainer.hidden {
+    display: none;
+    width: 0;
+}
+
+.PullTab {
+    position: absolute;
+    left: -20px;
+    height: 110px;
+    width: 20px;
+    z-index: 3;
+}
+
+.pulltab.hidden {
+    left: 180px;
+}
+
+#MyTeamTab {
+    background: transparent url(../images/myteam.png) no-repeat center top;
+}
+
+#PickListTab {
+    background: transparent url(../images/draftlist.png) no-repeat center top;
+    top: 110px;
+}
+
+#DraftHistoryTab {
+    background: transparent url(../images/drafthistory.png) no-repeat center top;
+    top: 220px;
+
+}

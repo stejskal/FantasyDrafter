@@ -7,7 +7,7 @@
 
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>com.stejskal.web.scala.fantasydrafter.servlets.LoginServlet</servlet-class>
+        <servlet-class>com.stejskal.web.scala.fantasydrafter.servlets.BaseServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
