@@ -1,0 +1,5 @@
+-@ var draftHistory : List[com.stejskal.fantasydrafter.models.Player]
+%div{:id=>"DraftHistory", :class=>"PullTabContainer hidden"}
+    %H3 Draft History
+    %ul
+        =draftHistory foreach {view(_, "list")}

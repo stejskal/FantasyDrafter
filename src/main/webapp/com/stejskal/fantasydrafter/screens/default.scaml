@@ -1,0 +1,29 @@
+-@ var body: String
+-@ var myTeam : List[com.stejskal.fantasydrafter.models.Player]
+-@ var draftHistory : List[com.stejskal.fantasydrafter.models.Player]
+-@ var pickList : List[com.stejskal.fantasydrafter.models.Player]
+-@ var teams : List[com.stejskal.fantasydrafter.models.FantasyTeam]
+-@ var cssFiles : List[String]
+%html
+    %head
+        %title Drafter
+        =cssFiles.foldLeft(List[xml.Elem]()){(list, filename) => <link rel="stylesheet" type="text/css" href={"/static/css/" + filename}/> :: list}
+        %script{:src=>"/static/javascript/JQuery.js"}
+        %script{:src=>"/static/javascript/Move.js"}
+    %body
+        %div{:id=>"MainContainer"}
+            %div{:id=>"TopContainer"}
+                #{render("/com/stejskal/fantasydrafter/divs/Header.scaml")}
+                #{render("/com/stejskal/fantasydrafter/divs/TeamList.scaml", Map("teams"->teams))}
+            %div{:id=>"MiddleContainer"}
+                #{render("/com/stejskal/fantasydrafter/divs/MainNavigation.scaml")}
+                %div{:id=>"PopoutContainer"}
+                    %a{:class=>"PullTab", :id=>"MyTeamTab", :type=>"button", :onClick=>"popoutTabClicked('#MyTeam')"}
+                    %a{:class=>"PullTab", :id=>"PickListTab", :type=>"button", :onClick=>"popoutTabClicked('#PickList')"}
+                    %a{:class=>"PullTab", :id=>"DraftHistoryTab", :type=>"button", :onClick=>"popoutTabClicked('#DraftHistory')"}
+                    #{render("/com/stejskal/fantasydrafter/divs/MyTeam.scaml", Map("myTeam" -> myTeam))}
+                    #{render("/com/stejskal/fantasydrafter/divs/PickList.scaml", Map("pickList" -> pickList))}
+                    #{render("/com/stejskal/fantasydrafter/divs/DraftHistory.scaml", Map("draftHistory" -> draftHistory))}
+                #{unescape(body)}
+            %div{:id=>"BottomContainer"}
+                #{render("/com/stejskal/fantasydrafter/divs/Footer.scaml")}

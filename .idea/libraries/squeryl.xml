@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="squeryl">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/lib/squeryl_2.9.0-0.9.4-RC7.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

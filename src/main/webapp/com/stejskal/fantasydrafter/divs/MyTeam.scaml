@@ -1,0 +1,5 @@
+-@ var myTeam : List[com.stejskal.fantasydrafter.models.Player]
+%div{:id=>"MyTeam", :class=>"PullTabContainer hidden"}
+    %H3 My Team
+    %ul
+        =myTeam foreach {view(_, "list")}

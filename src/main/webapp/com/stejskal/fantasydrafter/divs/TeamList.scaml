@@ -1,0 +1,5 @@
+-@ var teams : List[com.stejskal.fantasydrafter.models.FantasyTeam]
+%div{:id=>"TeamList"}
+    %ul
+        =teams foreach {view(_, "list")}
+    %div{:id=>"buffer"}

@@ -1,5 +1,0 @@
--@ var draftHistory : List[com.stejskal.web.scala.fantasydrafter.models.Player]
-%div{:id=>"DraftHistory", :class=>"PullTabContainer hidden"}
-    %H3 Draft History
-    %ul
-        =draftHistory foreach {view(_, "list")}
