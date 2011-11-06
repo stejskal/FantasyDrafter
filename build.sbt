@@ -12,4 +12,6 @@ libraryDependencies += "org.apache.tomcat" % "tomcat-servlet-api" % "7.0.22"
 
 libraryDependencies += "org.fusesource.scalate" % "scalate-core" % "1.5.2"
 
-libraryDependencies += "net.databinder" %% "unfiltered-filter" % "0.5.1"
+libraryDependencies += "org.squeryl" % "squeryl_2.9.1"  % "0.9.4"
+
+libraryDependencies += "mysql" % "mysql-connector-java" % "5.1.18"

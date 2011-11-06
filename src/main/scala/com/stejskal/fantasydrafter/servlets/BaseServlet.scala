@@ -6,6 +6,9 @@ import javax.servlet.ServletConfig
 import org.fusesource.scalate.servlet.{ServletTemplateEngine, ServletRenderContext}
 import org.fusesource.scalate.servlet.Config._
 import com.stejskal.fantasydrafter.models.{FantasyTeam, Player}
+import org.squeryl.adapters.MySQLAdapter
+import org.squeryl.{Session, SessionFactory}
+import org.squeryl.PrimitiveTypeMode._
 
 class BaseServlet extends HttpServlet
 {
@@ -15,6 +18,11 @@ class BaseServlet extends HttpServlet
   override def init(config: ServletConfig)
   {
     super.init(config)
+//    Class.forName("com.mysql.jdbc.Driver")
+//    SessionFactory.concreteFactory = Some(()=>
+//      Session.create(
+//      java.sql.DriverManager.getConnection("..."),
+//      new MySQLAdapter))
     templateEngine = new ServletTemplateEngine(config)
   }
 
